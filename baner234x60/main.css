@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.logo {
+  width: 150px;
+  height: 38px;
+  margin: 10px 40px;
+  padding: 0;
+  transform: scale(0);
+  animation: 2s forwards logo;
+}
+@keyframes logo {
+  0%{transform: scale(1.25)}
+  50%{transform: scale(0.75)}
+  100%{transform: scale(1)}
+}
+#m-baner-link {
+  display: block;
+  margin: 0 auto;
+  width: 234px;
+  height: 60px;
+  background-image: url('img/bkg.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: 10s baner;
+}
+@keyframes baner {
+  0%{opacity: 0}
+  10%{opacity: 1}
+  95%{opacity: 1}
+  100%{opacity: 0}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>mbaner</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <a href="https://www.krojacevaskola.com" target="_blank" id="m-baner-link">
+    <img class="logo" src="img/logo.png" alt="logo">
+    <img class="img1" src="img/jquery.png" alt="jquery">
+    <img class="img2" src="img/js.png" alt="js">
+    <img class="img3" src="img/bootstrap.png" alt="bootstrap">
+    <img class="img4" src="img/php.png" alt="php">
+    <img class="img5" src="img/sass.png" alt="sass">
+    <img class="img6" src="img/css.png" alt="css">
+    <img class="img7" src="img/python.png" alt="python">
+    <img class="img8" src="img/xampp.png" alt="xampp">
+    <img class="img9" src="img/html.png" alt="html">
+    <img class="img10" src="img/github.png" alt="github">
+    <img class="img11" src="img/ajax.png" alt="ajax">
+  </a>
+
+  <script>
+    var bannerHolder;
+    var newOne;
+    setInterval(function () {
+      bannerHolder = document.getElementById('m-baner-link');
+      newOne = bannerHolder.cloneNode(true);
+      bannerHolder.parentNode.replaceChild(newOne, bannerHolder);
+    },10000);
+  </script>
+</body>
+</html>

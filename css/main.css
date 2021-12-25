@@ -1,0 +1,299 @@
+*{
+  box-sizing: border-box;
+}
+body,html {
+  height: 100%;
+  background-color: purple;
+}
+.container {
+  width: 1000px;
+  height: 1000px;
+  background-image: url('../img/image.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid blue;
+  position: relative;
+}
+.naslov {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  color: lavender;
+}
+.btn1 {
+  background-color: pink;
+  border: 10px solid purple;
+}
+.btn2 {
+  background-color: #f60;
+  border: 10px solid #333;
+}
+.btn3 {
+  background-color: red;
+  border: 10px solid lime;
+}
+.btn4 {
+  background-color: cadetblue;
+  border: 10px solid blue;
+}
+.btn5 {
+  background-color: black;
+  border: 10px solid green;
+}
+.a1 {
+  color: purple;
+  font-weight: bold;
+}
+.a2 {
+  color: #333;
+  font-weight: bold;
+}
+.a3 {
+  color: lime;
+  font-weight: bold;
+}
+.a4 {
+  color: blue;
+  font-weight: bold;
+}
+.a5 {
+  color: green;
+  font-weight: bold;
+}
+a:hover {
+  color: white;
+  font-size: 120%;
+}
+.baner, .baner1, .baner2, .baner3{
+  display: none;
+}
+@media (min-width:300px){
+  .container {
+    width: 280px;
+    height: 475px;
+  }
+  .baner3{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .row {
+    padding: 0;
+    float: left;
+  }
+  .naslov {
+    color: white;
+    font-size: 40px;
+    padding: 0 5px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #btn1, #btn2, #btn3, #btn4, #btn5 {
+    width: 200px;
+    height: 70px;
+    font-size: 28px;
+    margin: 10px;
+    opacity: 0;
+    -webkit-animation: 3s forwards btn;
+            animation: 3s forwards btn;
+    transform: scale(0) rotate(0deg);
+  }
+  @-webkit-keyframes btn {
+    0%{transform: scale(0) rotate(0deg)}
+    50%{transform: scale(1.2) rotate(360deg)}
+    100%{transform: scale(1) rotate(0deg)}
+    0%{opacity: 0}
+    30%{opacity: 1}
+    100%{opacity: 1}
+  }
+  @keyframes btn {
+    0%{transform: scale(0) rotate(0deg)}
+    50%{transform: scale(1.2) rotate(360deg)}
+    100%{transform: scale(1) rotate(0deg)}
+    0%{opacity: 0}
+    30%{opacity: 1}
+    100%{opacity: 1}
+  }
+  .a {
+    font-size: 28px;
+  }
+}
+@media (min-width:550px){
+  .container {
+    width: 500px;
+    height: 680px;
+  }
+  .row {
+    padding: 5px;
+    float: left;
+  }
+  .baner3 {
+    display: none;
+  }
+  .baner2{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .naslov {
+    color: white;
+    font-size: 50px;
+    padding: 10px 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #btn1, #btn2, #btn3, #btn4, #btn5 {
+    width: 370px;
+    height: 100px;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+  }
+}
+@media (min-width:768px){
+  .container {
+    width: 750px;
+    height: 675px;
+  }
+  .baner2 {
+    display: none;
+  }
+  .baner1 {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translate(0);
+    animation: 3s 1s infinite blind;
+    }
+    @keyframes blind {
+      0%{transform: translate(0)}
+      25%{transform: translate(-10px)}
+      50%{transform: translate(-20px)}
+      75%{transform: translate(-10px)}
+      100%{transform: translate(0)}
+    }
+  .row {
+    padding: 50px 15px;
+    margin: auto;
+    float: left;
+  }
+  .naslov {
+    color: white;
+    font-size: 50px;
+    padding: 15px 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #btn1, #btn2, #btn3, #btn4, #btn5 {
+    width: 220px;
+    height: 85px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 10%;
+  }
+  #btn2 {
+    margin-left: 100px;
+  }
+  #btn3 {
+    margin-left: 200px;
+  }
+  #btn4 {
+    margin-left: 300px;
+  }
+  #btn5 {
+    margin-left: 400px;
+  }
+}
+@media (min-width:992px){
+  .container {
+    width: 900px;
+    height: 1000px;
+  }
+  .baner1 {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .naslov {
+    color: white;
+    font-size: 75px;
+    padding: 15px 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .row {
+    padding: 50px 30px;
+    margin: auto;
+    float: left;
+  }
+  #btn1, #btn2, #btn3, #btn4, #btn5 {
+    width: 270px;
+    height: 125px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 25%;
+  }
+  #btn2 {
+    margin-left: 125px;
+  }
+  #btn3 {
+    margin-left: 250px;
+  }
+  #btn4 {
+    margin-left: 375px;
+  }
+  #btn5 {
+    margin-left: 500px;
+  }
+}
+.baner {
+  display: none;
+}
+@media (min-width:1200px){
+  .container {
+    width: 1100px;
+  }
+  .baner1{
+    display: none;
+  }
+  .baner {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 15px;
+    transform: translate(0);
+    animation: 3s 1s infinite rise;
+    }
+    @keyframes rise {
+      0%{transform: translate(0)}
+      25%{transform: translate(20px)}
+      50%{transform: translate(40px)}
+      75%{transform: translate(20px)}
+      100%{transform: translate(0)}
+    }
+  .naslov {
+    color: white;
+    font-size: 75px;
+    padding: 15px 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .row {
+    padding: 50px 30px;
+    margin: auto;
+    float: left;
+}
+  #btn1, #btn2, #btn3, #btn4, #btn5 {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+}

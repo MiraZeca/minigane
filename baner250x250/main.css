@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.logo {
+  width: 180px;
+  height: 30px;
+  margin: 10px 20px;
+  padding: 0;
+  transform: scale(0);
+  animation: 2s forwards logo;
+}
+@keyframes logo {
+  0%{transform: scale(1.25)}
+  50%{transform: scale(0.75)}
+  100%{transform: scale(1)}
+}
+#m-baner-link {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  background-image: url('img/bkg.jpg');
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: 10s baner;
+}
+@keyframes baner {
+  0%{opacity: 0}
+  10%{opacity: 1}
+  95%{opacity: 1}
+  100%{opacity: 0}
+}
+.img1 {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  top: 50px;
+  left: 20px;
+  transform: rotateY(0deg);
+  animation: 3s 1s infinite slide;
+}
+.img2 {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 55px;
+  left: 90px;
+  transform: rotate(0deg);
+  animation: 3s 1s infinite up;
+}
+@keyframes up {
+  0%{transform: rotate(0deg)}
+  25%{transform: rotate(20deg)}
+  50%{transform: rotate(0deg)}
+  75%{transform: rotate(-20deg)}
+  100%{transform: rotate(0deg)}
+}
+.img3 {
+  position: absolute;
+  width: 55px;
+  height: 46px;
+  top: 35px;
+  right: 15px;
+  transform: scale(0);
+  animation: 3s 1s infinite five;
+}
+@keyframes five {
+  0%{transform: scale(0.5)}
+  25%{transform: scale(1)}
+  50%{transform: scale(1.5)}
+  75%{transform: scale(1)}
+  100%{transform: scale(0.5)}
+}
+.img4 {
+  position: absolute;
+  width: 68px;
+  height: 40px;
+  top: 100px;
+  left: 15px;
+  transform: translateX(0);
+  animation: 3s 1s infinite rise;
+}
+@keyframes rise {
+  0%{transform: translateX(0)}
+  25%{transform: translateX(10px)}
+  50%{transform: translateX(20px)}
+  75%{transform: translateX(10px)}
+  100%{transform: translateX(0px)}
+}
+.img5 {
+  position: absolute;
+  width: 50px;
+  height: 45px;
+  top: 80px;
+  right: 50px;
+  transform: rotateY(0deg);
+  animation: 3s 1s infinite slide;
+}
+.img6 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 115px;
+  right: 105px;
+  animation: roll 3s infinite;
+  transform: rotate(30deg);
+}
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.img7 {
+  position: absolute;
+  width: 54px;
+  height: 90px;
+  bottom: 10px;
+  left: 15px;
+  transform: rotate(0deg);
+  animation: 3s 1s infinite up;
+}
+.img8 {
+  position: absolute;
+  width: 40px;
+  height: 50px;
+  top: 125px;
+  right: 20px;
+  transform: rotate(0deg);
+  animation: 3s 1s infinite up;
+}
+.img9 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 15px;
+  transform: scale(0);
+  animation: 3s 1s infinite five;
+}
+.img10 {
+  position: absolute;
+  width: 85px;
+  height: 23px;
+  bottom: 60px;
+  left: 84px;
+  transform: rotateY(0deg);
+  animation: 3s 1s infinite slide;
+}
+.img11 {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  bottom: 15px;
+  left: 80px;
+  transform: rotateY(0deg);
+  animation: 3s 1s infinite slide;
+}
+@keyframes slide {
+  0%{transform: rotateY(0deg)}
+  25%{transform: rotateY(100deg)}
+  50%{transform: rotateY(0deg)}
+  75%{transform: rotateY(-100deg)}
+  100%{transform: rotateY(0deg}
+}
+/*
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11 {
+  animation: 1s  infinite img;
+  transform: scale(0);
+}
+
+@keyframes img {
+  0%{transform: scale(0)}
+  30%{transform: scale(1)}
+  60%{transform: scale(1.2)}
+  100%{transform: scale(1)}
+}
+.img12 {
+  position: absolute;
+  width: 280px;
+  height: 450px;
+  bottom: 65px;
+  right: 10px;
+  animation: 2s 1s infinite star;
+  transform: rotateX(0deg);
+}
+
+@keyframes star {
+  0%{transform: rotateX(0deg)}
+  100%{transform: rotateX(360deg)}
+} */
